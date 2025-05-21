@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress - HippoFitnessTracker</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="progress.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Added for Graphs -->
+    
+    <script defer src="progress.js"></script>
+</head>
+<body>
+    <div class="container">
+       
+
+        <!-- Progress Section -->
+        <main class="content">
+            <h1>Progress Tracker 📊</h1>
+
+            <!-- Weight Tracking -->
+            <h2>📏 Weight Tracker</h2>
+            <input type="number" id="weight-input" placeholder="Enter weight (kg)">
+            <button id="save-weight">Save Weight</button>
+            <ul id="weight-list"></ul>
+
+            <!-- Workout Streak -->
+            <h2>🔥 Workout Streak</h2>
+            <p id="streak-counter">You have worked out <span>0</span> days in a row! 💪</p>
+
+            <!-- Calories Burned Graph -->
+            <h2>🔥 Calories Burned</h2>
+            <canvas id="caloriesChart"></canvas>
+        </main>
+    </div>
+</body>
+</html>
+

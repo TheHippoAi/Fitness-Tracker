@@ -1,0 +1,65 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #CCDF92;
+}
+
+/* Profile Picture */
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+input, select, button {
+    width: 100%; /* Same width for all elements */
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    box-sizing: border-box; /* Fixes width inconsistencies */
+}
+
+button {
+    background-color: #CCDF92;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #DE3163;
+    color: white;
+}
+
+.danger-btn {
+    background-color: red;
+    color: white;
+}
+
+.danger-btn:hover {
+    background-color: darkred;
+}

@@ -1,0 +1,104 @@
+/* Full-Screen Progress Page */
+body {
+    background-color: #121212; /* Dark background */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Back Button */
+#back-to-dashboard {
+    background-color: #DE3163;
+    color: black;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#back-to-dashboard:hover {
+    background-color: #C71E4F;
+    color: white;
+}
+
+/* Progress Tracker Container */
+.progress-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Weight Input */
+#weight-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #2a2a2a;
+    color: white;
+}
+
+/* Save Button */
+#save-weight {
+    background-color: #CCDF92;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#save-weight:hover {
+    background-color: #AFCB73;
+}
+
+/* Weight History */
+#weight-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#weight-list li {
+    background: #CCDF92;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 8px 0;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Streak Counter */
+#streak-counter {
+    font-size: 20px;
+    font-weight: bold;
+    color: #DE3163;
+    margin-top: 15px;
+}
+
+/* Progress Chart */
+canvas {
+    width: 100%;
+    max-height: 350px;
+    margin-top: 20px;
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 10px;
+}

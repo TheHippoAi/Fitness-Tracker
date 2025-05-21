@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout - HippoFitnessTracker</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="workout.css">
+    <script defer src="workout.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>Workouts</h2>
+            <ul>
+                <li><a href="#" data-filter="all">🏋️ All Workouts</a></li>
+                <li><a href="#" data-filter="strength">🏋️ Strength</a></li>
+                <li><a href="#" data-filter="cardio">🏃 Cardio</a></li>
+                <li><a href="#" data-filter="flexibility">🧘 Flexibility</a></li>
+                <li><a href="#" data-filter="hiit">🔥 HIIT</a></li>
+                <li><a href="#" data-filter="custom">📋 Custom</a></li>
+                <button id="back-btn" class="back-button">← Back to Dashboard</button>
+            </ul>
+        </nav>
+
+        <!-- Main Workout Section -->
+        <main class="content">
+            <h1>Today's Workouts</h1>
+            <div class="workout-grid">
+                <div class="workout-card" data-category="strength">
+                    <h3>Full Body Strength</h3>
+                    <p>Duration: 45 min</p>
+                    <p class="timer">45:00</p>
+                    <button class="start-btn">Start Workout</button>
+                </div>
+                <div class="workout-card" data-category="cardio">
+                    <h3>Cardio Blast</h3>
+                    <p>Duration: 30 min</p>
+                    <p class="timer">30:00</p>
+                    <button class="start-btn">Start Workout</button>
+                </div>
+                <div class="workout-card" data-category="flexibility">
+                    <h3>Yoga & Stretch</h3>
+                    <p>Duration: 20 min</p>
+                    <p class="timer">20:00</p>
+                    <button class="start-btn">Start Workout</button>
+                </div>
+                <div class="workout-card" data-category="hiit">
+                    <h3>Intense HIIT</h3>
+                    <p>Duration: 25 min</p>
+                    <p class="timer">25:00</p>
+                    <button class="start-btn">Start Workout</button>
+                </div>
+                <!-- Custom Workout -->
+                <div class="workout-card" data-category="custom">
+                    <h3>My Custom Workout</h3>
+                    <p>Set your duration (min):</p>
+                    <input type="number" id="custom-time" min="1" max="120" value="30">
+                    <p class="timer">30:00</p>
+                    <button class="start-btn">Start Workout</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>document.getElementById('back-btn').addEventListener('click', function() {
+        window.location.href = 'dashboard.html';
+      });</script>
+</body>
+</html>

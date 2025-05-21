@@ -1,0 +1,35 @@
+<!-- Nutrition Section -->
+ 
+<main class="content">
+    <h1>Meal Planner</h1>
+    <label for="meal-date">Select Date:</label>
+    <input type="date" id="meal-date">
+    <link rel="stylesheet" href="meal.css">
+    <script defer src="meal.js"></script>
+    <title>Meal - HippoFitnessTracker</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <div class="meal-grid">
+        <div class="meal-card">
+            <h3>Breakfast</h3>
+            <input type="text" id="breakfast" placeholder="Enter your meal">
+        </div>
+        <div class="meal-card">
+            <h3>Lunch</h3>
+            <input type="text" id="lunch" placeholder="Enter your meal">
+        </div>
+        <div class="meal-card">
+            <h3>Dinner</h3>
+            <input type="text" id="dinner" placeholder="Enter your meal">
+        </div>
+        <div class="meal-card">
+            <h3>Snacks</h3>
+            <input type="text" id="snacks" placeholder="Enter your meal">
+        </div>
+    </div>
+
+    <button id="save-meal">Save Meal Plan</button>
+
+    <h2>Your Meal Plans</h2>
+    <div id="meal-plans"></div>
+</main>

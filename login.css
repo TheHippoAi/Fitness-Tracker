@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #2c3e50); /* Dark gradient background */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Auth Container */
+.auth-container {
+  background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #DE3163; /* Pinkish-red border */
+}
+
+/* Heading */
+.auth-container h1 {
+  font-size: 2rem;
+  color: #DE3163; /* Deep pinkish-red */
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo inside the heading */
+.auth-container h1 img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #CCDF92; /* Greenish-yellow border on focus */
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Login and Signup Buttons */
+#loginForm button,
+#signupForm button {
+  background: #DE3163; /* Deep pinkish-red */
+  color: white;
+}
+
+#loginForm button:hover,
+#signupForm button:hover {
+  background: #CCDF92; /* Soft greenish-yellow */
+  color: #1a1a1a;
+}
+
+/* Google Sign-In Button */
+#googleSignIn {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 2px solid #DE3163;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+#googleSignIn:hover {
+  background: #CCDF92;
+  color: #1a1a1a;
+}
+
+#googleSignIn img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Sticky Footer */
+footer {
+  background: #1a1a1a;
+  color: #CCDF92;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 20px;
+  }
+
+  .auth-container h1 {
+    font-size: 1.5rem;
+  }
+
+  input, button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+#loginForm {
+  margin-bottom: 30px;
+}
+
+#signupForm {
+  display: none; /* Hide signup by default */
+}

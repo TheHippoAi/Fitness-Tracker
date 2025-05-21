@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - HippoFitnessTracker</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="profile.css">
+    <script defer src="profile.js"></script>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>👤 Your Profile</h1>
+
+        <!-- Profile Picture Upload -->
+        <div class="profile-pic">
+            <img id="profile-img" src="default-avatar.png" alt="Profile Picture">
+            <input type="file" id="upload-img">
+        </div>
+
+        <!-- Editable Profile Details -->
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label>Age (Optional):</label>
+        <input type="number" id="age" placeholder="Enter your age">
+
+        <label>Height (cm) (Optional):</label>
+        <input type="number" id="height" placeholder="Enter your height">
+
+        <label>Weight (kg) (Optional):</label>
+        <input type="number" id="weight" placeholder="Enter your weight">
+
+        <label>Fitness Goal (Optional):</label>
+        <select id="goal">
+            <option value="none">Select a Goal</option>
+            <option value="weight_loss">Weight Loss</option>
+            <option value="muscle_gain">Muscle Gain</option>
+            <option value="maintain_fitness">Maintain Fitness</option>
+        </select>
+
+        <button id="save-profile">💾 Save Profile</button>
+
+        <!-- Logout & Delete Account -->
+        <button id="logout-btn" class="danger-btn">🚪 Logout</button>
+        <button id="delete-account-btn" class="danger-btn">🗑️ Delete Account</button>
+    </div>
+</body>
+</html>
